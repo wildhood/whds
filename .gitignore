@@ -1,0 +1,37 @@
+# Megan's
+
+megan/wp-admin/*
+megan/wp-includes/*
+megan/wp-content/plugins/*
+megan/wp-content/uploads/*
+megan/wp-content/upgrade/*
+
+
+# Mark's
+
+mark/wp-admin/*
+mark/wp-includes/*
+megan/wp-content/plugins/*
+megan/wp-content/uploads/*
+megan/wp-content/upgrade/*
+
+# root
+
+cgi-bin/*
+error_log
+wp-comments-post.php
+wp-load.php
+wp-config-sample.php
+wp-login.php
+license.txt
+wp-config.php
+wp-mail.php
+readme.html
+wp-settings.php
+wp-activate.php
+wp-cron.php
+wp-signup.php
+wp-trackback.php
+wp-blog-header.php
+wp-links-opml.php
+xmlrpc.php
