@@ -9,11 +9,12 @@ megan/wp-content/upgrade/*
 
 # Mark's
 
-mark/wp-admin/*
-mark/wp-includes/*
-megan/wp-content/plugins/*
-megan/wp-content/uploads/*
-megan/wp-content/upgrade/*
+mark/*
+#mark/wp-admin/*
+#mark/wp-includes/*
+#mark/wp-content/plugins/*
+#mark/wp-content/uploads/*
+#mark/wp-content/upgrade/*
 
 # root
 
