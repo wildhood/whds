@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <title>
+	    TheWhds Test Page
+    </title>
+	<!-- <link rel="stylesheet" type="text/css" href="https://www.thewildhoods.com/thewhds/social-style.css"> -->
+
+
+<style type="text/css">
+	body {
+/* 		background: #9d937f; */
+	}
+	
+/*
+	.social-bar {
+	display:block;
+	background: #e2e2e2;
+	height: 24px;
+	}
+*/
+	
+	.social ul {
+
+	}
+	
+	.social li {
+	float: left;
+	list-style: none;
+	}
+	
+	.social--fb {
+	padding-top: 2px;
+	width: 105px;
+	display: block;
+	}
+	
+	.social--twitter {
+	padding-top: 2px;
+	width: 95px;
+	display: block;
+	}
+	
+	.social--google {
+	width: 90px;
+	display: block;
+	}
+	
+	#custom-fb-button a {
+    display: block;
+    padding: 2px 5px 2px 20px;
+    background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
+    border: 1px solid #ccc;
+	}
+
+	#custom-tweet-button a {
+    display: block;
+    padding: 2px 5px 2px 20px;
+    background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
+    border: 1px solid #ccc;
+	}
+	
+/*
+	.social--pin {
+	width: 20px;
+	display: block;
+	}
+*/
+
+</style>
+
+</head>
+
+<body>
+
+<div>
+	
+	<ul class="social">
+
+		<li id="custom-fb-button">
+			<div class="fb-share-button" data-href="http://megan.thewildhoods.com/" data-type="link"></div>
+		</li>
+		
+		<li id="custom-g-plus-button">	
+			<a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" >
+			    <img src="/icons/gplus.jpg" alt="Google+" title="Google+"/>
+			</a>
+		</li>
+		
+		<li id="custom-tweet-button">
+			<a href="https://twitter.com/share?url=https%3A%2F%2Fdev.twitter.com%2Fpages%2Ftweet-button" target="_blank">Tweet</a>
+		</li>
+<!--
+		<li><div class="social--fb"><div id="fb-root"></div><div class="fb-share-button" data-href="http://megan.thewildhoods.com/unique_post" data-type="button_count"></div></div></li>
+	
+		<li><div class="social--twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a></div></li>
+		
+		<li><div class="social--google g-plusone" data-href="http://megan.thewildhoods.com"></div></li>
+-->
+		    
+<!--
+		<li>
+			<div class="social--pin">
+				<a href="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest" data-pin-do="buttonPin" data-pin-config="right">
+					<img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" />
+				</a>
+			</div>
+		</li>
+-->
+	
+	</ul>
+	
+</div>
+
+</body>
+   
+<script type="text/javascript">
+	
+	/* google+ */
+	(function() {
+		var po = document.createElement('script');
+		po.type = 'text/javascript';
+		po.async = true;
+		po.src = 'https://apis.google.com/js/platform.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(po, s);
+	})();
+	
+	/* facebook */
+	
+	/* 	note - remove the "http:" in js.src */
+
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	
+	/* twitter */
+	
+	!
+	function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (!d.getElementById(id)) {
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}
+	}(document, "script", "twitter-wjs");
+	
+	/* pintrest */
+	
+	/* 	note - remove the "http:" in p.src */
+	
+	/*
+	(function(d) {
+		var f = d.getElementsByTagName('SCRIPT')[0],
+			p = d.createElement('SCRIPT');
+		p.type = 'text/javascript';
+		p.async = true;
+		p.src = 'http://assets.pinterest.com/js/pinit.js';
+		f.parentNode.insertBefore(p, f);
+	}(document));
+	*/
+
+</script>
+
+</html>
